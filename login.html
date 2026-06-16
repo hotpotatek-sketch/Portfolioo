@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell login-shell">
+    <div class="hero-panel animated-zoom">
+      <div class="hero-text">
+        <span class="eyebrow">Student Portfolio</span>
+        <h1>Login to access the portfolio</h1>
+        <p>Secure entry with regex validation and an interactive clock while you wait.</p>
+        <div class="clock-box">
+          <span id="clock">00:00:00</span>
+        </div>
+      </div>
+      <form id="loginForm" class="login-card">
+        <h2>Member Login</h2>
+        <div class="input-group">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="8+ chars, upper, lower, digit" required />
+        </div>
+        <div id="loginMessage" class="form-message"></div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <p class="small-text">Use a valid email and strong password: uppercase, lowercase, digits.</p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
